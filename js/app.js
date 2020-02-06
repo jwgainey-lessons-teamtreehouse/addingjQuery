@@ -4,7 +4,7 @@
 // });
 $('.spoiler').on('click', 'button', function(event) {
     console.log(event.target);
-    //$(".spoiler span").show();
+    $(event.target).prev().show();
     $(event.target).hide();
 });
 
