@@ -4,8 +4,8 @@
 // });
 $('.spoiler').on('click', 'button', function(event) {
     console.log(event.target);
-    $(event.target).prev().show();
-    $(event.target).hide();
+    $(this).prev().show();
+    $(this).hide();
 });
 
 const $button = $("<button>RevealSpoiler</button>")
